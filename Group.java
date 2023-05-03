@@ -1,29 +1,39 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class Group{
-    /*Група не може існувати без старости - I'm not getting this one
-    * додати завдання (для всієї групи) - must be 2 lists one with the students
-    and another one with Home Work, but it doesnt work
-     */
+public class Group {
+
+    private Student headOfGroup;
 
 
-
-
-         ArrayList<String> homeWork = new ArrayList<String>();
-         homeWork.add("learn new info about java") ;
-         homeWork.add ("try to write new program") ;
-
-         ArrayList<> groupMembers = new ArrayList<>();
-         groupMembers.add.headOfGroup;
-         groupMembers.add.student;
-         groupMembers.add.secondStudent;
-
-         
-        
+    public void setHeadOfGroup(Student headOfGroup) {
+        this.headOfGroup = headOfGroup;
+    }
+/*якшо я праильно розумію то студентів треба додати тут, але я не знаю як
+* google каже шо якось так але джава не згодна*/
+    private List<Student> studentList = new LinkedList<>();
+    studentList.add(Student headOfGroup);
+    studentList.add(Student student1);
+    studentList.add(Student student2);
+    studentList.remove(Student getStudent1);
 
 
 
 
 
-}
+    /*якшо я праильно розумію то Tasks треба додати тут, але я не знаю як*/
+    private List<String> groupTasks = new LinkedList<>();
+    groupTasks.add("to learn java methods");
+    groupTasks.add ("try not cry while doing it");
+
+
+    }
+    \*- перейменувати студента -Олександр сказав то з зірочкою, а мені б те, шо без зірочки розібрати *\
+
+
+
+
+
+
+
+

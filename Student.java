@@ -1,13 +1,8 @@
-import java.util.List;
-
 public class Student {
-    /* я не розумію як "наповнити" студента данними
-    * типу імя, прізвище і тд */
 
-    public String name;
-    public String secondName;
+    private String name;
+    private String secondName;
     int id;
-    public List<Student> listOfStudents;
 
 
     public String getName() {
@@ -30,11 +25,12 @@ public class Student {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+
+    private static int idCounter = 0;
+
+    public Student(String name, String secondName) {
+        this.id = ++idCounter;
+        this.name = name;
+        this.secondName = secondName;
     }
 }
-
-
-
-
